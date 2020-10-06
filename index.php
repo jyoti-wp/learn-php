@@ -71,6 +71,7 @@ echo $thoughtOfTheDay;
 
 // how do we store a simple integer
 // it can be age or any number even if its negative. including zero
+// we can perform calculations we can add thing up by concatinating strings
 
 $daysInaWeek = 7;
 
@@ -81,3 +82,15 @@ $daysInaWeek = 7;
 // example
 
 $age = 10;
+
+// echo $age;
+
+$fileIsUploaded = true;
+// now use if statement to check if its value is true or false
+// lets creat an if value
+if ($fileIsUploaded) {
+    echo 'Your file is uploaded';
+}
+
+
+// if you ever wanna check what kind of values your working on use var_dump

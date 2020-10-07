@@ -94,3 +94,26 @@ if ($fileIsUploaded) {
 
 
 // if you ever wanna check what kind of values your working on use var_dump
+
+examples of array
+
+$people = [
+    'alex' => 26,
+    'billy' => 21
+];
+
+echo $people[];
+
+// you can create an array within an another array
+
+// example
+
+$user = [['username' => 'alex'], ['username' => 'billy']];
+
+var_dump($user);
+
+different ways of finding the value
+
+example
+
+echo $user[0]['username'];

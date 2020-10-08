@@ -139,3 +139,29 @@ $status = 'The current weather is' .$weather. 'and it\'s' .$degrees dergrees;
 echo $status;
 
 // if you want to add any symbol or vaalue at the end of the variable value for exaple instead of writing degree we can actually use a sign just make sure that variables are wrapped in a value
+// instead of assigining variable many a times you can just add the value whileyou echo out 
+
+// example
+
+echo 'My name is' , 'Jyoti';
+
+// or you can do it the other way
+
+// example 
+
+$name = 'Jyoti';
+
+echo 'My name is', $name;
+
+
+// NEXT example is for if statements
+
+$dayOfWeek = 2;
+
+if ($dayTheWeek == 1 ) {
+    echo 'Its Monday';
+} else {
+    echo 'It is not Monday';
+}
+
+echo $dayOfWeek;

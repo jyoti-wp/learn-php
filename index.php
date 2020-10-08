@@ -108,12 +108,34 @@ echo $people[];
 
 // example
 
-$user = [['username' => 'alex'], ['username' => 'billy']];
+// $user = [
+//     ['username' => 'alex', 'email => 'alex@icloud.com', 'likes' => ['cats', 'food']], 
+//     ['username' => 'billy', 'emial => billy@icloud.com', 'likes' => ['Dogs', 'Books']]
+// ];
 
-var_dump($user);
+// echo '<pre>' ,var_dump($user), '</pre>';
 
-different ways of finding the value
 
-example
+// NULL
+//  if you are trying to find a variable that doesnt exist or have no value assigned, its considered as null variables
 
-echo $user[0]['username'];
+$name = 'alex'
+
+users($name);
+
+var_dump($name);
+
+
+// example of concatinating strings and values
+
+// examples
+
+
+$weather = 'Sunny';
+$degrees = 30;
+
+$status = 'The current weather is' .$weather. 'and it\'s' .$degrees dergrees;
+
+echo $status;
+
+// if you want to add any symbol or vaalue at the end of the variable value for exaple instead of writing degree we can actually use a sign just make sure that variables are wrapped in a value

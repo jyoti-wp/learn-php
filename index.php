@@ -165,3 +165,62 @@ if ($dayTheWeek == 1 ) {
 }
 
 echo $dayOfWeek;
+
+
+// Best practices
+
+// example
+
+$daysOfTheWeek = 1;
+
+if ($daysOfTheWeek = 2) {
+    echo 'It is Monday';
+
+} else {
+    echo 'It is not Monday';
+}
+
+// Idealy check evebry single option.
+// either you can use a new condition elseif 
+
+// example
+
+$daysOfTheWeek = 1;
+
+if ($daysOfTheWeek = 2) {
+    echo 'It is Monday';
+
+} elseif ($daysOfTheWeek == 2) {
+    echo 'It is Tuesday';
+} else if ($daysOfTheWeek == 3) {
+
+} else if ($daysOfTheWeek == 4) {
+    echo 'It is Wednesday';
+} else if ($daysOfTheWeek == 5) {
+    echo 'its is Thursday'; 
+} else {
+ echo 'Not a valid option'
+}
+
+// so on and sp forth
+
+// and if the options are outside the condition is will reflect the 
+// last option. 
+
+// Another example 
+
+$dayOfWeek = 1
+
+$daysOfWeek = [
+    1 => 'Monday',
+    2 => 'Thuesday',
+    3 => 'Wednesday',
+];
+
+// now we can create an if statement to get the value provided
+
+if (in_array($dayOfWeek, array_keys($daysOfWeek))) {
+ echo '$daysOfWeek[$dayOfWeek];
+}
+
+// Everytime the number changes the outcome changes

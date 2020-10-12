@@ -245,4 +245,23 @@ if ($name) {
 
 // you could technically nest as many if statments as you need 
 
+// There are simpler ways to nest these statemts and avoid all the confusion its call the inversion operator
+
+
+$name = 'joey';
+
+if ( ) {
+    return;
+} 
+
+echo 'your name is' .$name .'.';
+
+if (strlen($name) > 10) {
+
+ echo 'Oh! And you have a long name';
+
+}
+
+// you can also use true or false condition 
+
 

@@ -220,7 +220,29 @@ $daysOfWeek = [
 // now we can create an if statement to get the value provided
 
 if (in_array($dayOfWeek, array_keys($daysOfWeek))) {
- echo '$daysOfWeek[$dayOfWeek];
+ echo '$daysOfWeek[$dayOfWeek]';
+} else {
+    echo 'not a valid day';
+}
+// If things dont work try understanding the logic behind the codes
+
+
+// example for block nesting
+
+// almost anything in php can be nested insde anither block if u have blocks
+
+// lets build a block that tells us the name and also if we have a long name 
+
+$name = 'Joey Tribyanni';
+
+if ($name) {
+    echo 'Your name is ' .$name;
+
+    if (strlen($name) > 10) {
+        echo 'oh, And you have a very long name'
+    }
 }
 
-// Everytime the number changes the outcome changes
+// you could technically nest as many if statments as you need 
+
+

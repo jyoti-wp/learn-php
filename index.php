@@ -348,3 +348,6 @@ switch (true) {
         $color = 'gray';
         break;
 }
+
+
+another example of reaasigning the value

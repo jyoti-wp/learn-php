@@ -317,9 +317,34 @@ if ($tableAvailable === true) {
 }
 
 if ($tableAvailable !== true) {
-    echo 'No table available';
+    echo 'No tables available';
 }
 
 // other comparison operator we can use 
 // you can use exclamation mark 
 
+// switch statement 
+// we dont use them often but they are clean and easy to use 
+
+switch (1) {
+    case 1;
+        echo 'The value is one';
+        break;
+    default;
+        echo 'The value is unknown';
+        break;
+
+}
+
+
+$weather = 'Sunny';
+$color = null;
+
+switch (true) {
+    case $weather == 'Sunny';
+        $color = 'blue';
+        break;
+    case $weather == 'Cloudy';
+        $color = 'gray';
+        break;
+}

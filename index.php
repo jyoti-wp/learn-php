@@ -294,3 +294,32 @@ if ($weekDays == 6 || $weekDays == 7 && $workingTheWeekend) {
 
 // if we define out number 6 or 7 we will get 'The weekend is here'; 
 
+
+
+// next example is of comparison operator 
+// Now we will be using === comparison operator
+
+$upload = true;
+
+if ($upload === ture) {
+    echo 'Uploaded';
+}
+
+// Its a bit more safe to use === operator 
+
+// another example 
+
+
+$tableAvailable = true;
+
+if ($tableAvailable === true) {
+    echo 'Book a table';
+}
+
+if ($tableAvailable !== true) {
+    echo 'No table available';
+}
+
+// other comparison operator we can use 
+// you can use exclamation mark 
+

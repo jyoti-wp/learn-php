@@ -265,3 +265,32 @@ if (strlen($name) > 10) {
 // you can also use true or false condition 
 
 
+// examples of logical operator
+
+if (true && true) {
+    echo 'hello';
+}
+
+// you can also write (true && false) but you wont get any outcome as both the statements either need to be true or fales
+
+// lets try something more real 
+// lets create a username and password  
+
+$username = 'Billy';
+$password = 'Ilovedogs';
+
+if ($username == 'Billy' && $password = 'Ilovedogs') {
+    echo 'You are In';
+}
+
+// another example 
+
+$weekDays = 3;
+$workingTheWeekend = true;
+
+if ($weekDays == 6 || $weekDays == 7 && $workingTheWeekend) {
+    echo 'The weekend is here';
+}
+
+// if we define out number 6 or 7 we will get 'The weekend is here'; 
+

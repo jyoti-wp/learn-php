@@ -485,4 +485,48 @@ $namess = ['Alex', 'Maria', 'Joe'];
 
 for (i = 0; $i < count($namess); $i++ ) {
     echo $namess[$i], '<br>' ;
+
 }
+
+//  add br for line break to avoid loops to keep running 
+
+
+// lets learn about while loop 
+
+while (false) {
+    echo 'It will run';
+}
+
+
+// another example 
+
+$curentNumber = 1;
+$endAt = 10;
+$incrementBy = 1;
+
+while ($curentNumber <= $endAt) {
+    $curentNumber += $incrementBy;
+    echo $curentNumber, <br> ;
+}
+
+// becaue it is equal to or add by the final outcome will be 11 
+
+// the other option is to echo out before we increment it 
+// these loops give us control over how we initialise and check, it lets us create if statment but with more control inside the block 
+
+
+// lets create another statment 
+
+lets role a dice till we get six 
+
+$numberIWant = 6;
+
+// you need to use rand 
+
+echo rand($numberIWant);
+
+// lets create a while loop and check 
+
+while (($diceRole = rand(1,6)) !== $numberIWant) {
+    echo "You rolled a {$diceRole}, we need a {$numberIWant}" <br>;
+} 

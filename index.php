@@ -433,6 +433,56 @@ for ($row = 1; $row <= $rows: $rows++) {
     }
 }
 
+// now lets cover for loop 
+ for ($a = 1; $a <= 10; $a++) {
+    echo $a . <br>;
+ }
+
+// these kind of loops are used when you already know the number 
+
+// lets check another example 
+
+$totalItems = 210;
+$itemsPerPage = 25;
+
+$pageCount = $totalItems / $itemsPerPage;
+
+echo $pageCount;  
+
+// but what we need to doid round up the value as we are trying to find the number of pages 
+// how can we do that 
+
+// hence we use a php fuction called ceil and the oposite function will be floor
+
+$pageCount = ceil($totalItems / $itemsPerPage);
+
+echo $pageCount;
+
+// now lets generate a for loop 
+// you will find and i variale in for loop which stand for increment 
 
 
+// this is how you calculate of how many pages to show 
 
+
+for ($i = 1; $i <= $pageCount; i++) {
+    echo '<a href="?page ' . $i . ' ">' . $i . '</a>'
+
+
+        // if theres only one page to display following is the way to write 
+
+
+if ($pageCount => 1) {
+    for ($i = 1; $i <= $pageCount; i++) {
+    echo '<a href="?page ' . $i . ' ">' . $i . '</a>';
+
+}
+
+
+// another example 
+
+$namess = ['Alex', 'Maria', 'Joe'];
+
+for (i = 0; $i < count($namess); $i++ ) {
+    echo $namess[$i], '<br>' ;
+}

@@ -350,4 +350,58 @@ switch (true) {
 }
 
 
-another example of reaasigning the value
+// We can add, subtract, multiply, divide and concatinate add strings 
+// we'll learn of how to store things in database
+// Example 
+
+$view = 0;
+
+$view = 0;
+
+// We can assign the same value as many times we want
+
+// but we can add another value to the same variable lets see how
+
+$views = 0;
+$views = $views + '1';
+
+echo $views;
+
+// we can use another way too 
+
+$views = $views++;
+
+// or 
+
+$views++;
+// and we can do this multiple times 
+$views++
+$views++
+$views++
+$views++
+
+// everytime we write the vaule the number will increase 
+
+echo $views
+// the answer will be 5 as we added the vaule 5 times 
+
+// another example
+// lets assume we have taken a course with 30 classes 
+
+$lessons = 30;
+// but we have completed only 7 classes till now 
+$completedLessons = 7;
+
+// now the formula to calculate the percentage will be 
+
+// 7 / 30 * 100
+
+// lets add another value 
+
+$percentageCompleted = ($completedLessons / $lessons) * 100;
+
+echo "YOu've completed ($percentageCompleted)% of the course";
+
+
+
+

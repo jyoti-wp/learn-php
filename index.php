@@ -420,5 +420,19 @@ $balance = $balance - $cost;
 echo $balance;
 
 
+// another example 
+
+$rows = 10;
+// we use for loop to initialise number 
+
+for ($row = 1; $row <= $rows: $rows++) {
+    if ($row % 2 === 0) {
+        echo 'even';
+    } else {
+        echo 'Odd';
+    }
+}
+
+
 
 

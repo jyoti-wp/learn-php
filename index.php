@@ -402,6 +402,23 @@ $percentageCompleted = ($completedLessons / $lessons) * 100;
 
 echo "YOu've completed ($percentageCompleted)% of the course";
 
+// or another way to get the percentage and avoid rest of the decimiles will be as follow 
+
+$percentageCompleted = number_format($percentageCompleted, 2);
+// or if you dont want the last to decimals you can just write 
+
+$percentageCompleted = number_format($percentageCompleted);
+
+
+// lets check another example for addition 
+
+$balance = 500;
+$cost = 25; 
+
+$balance = $balance - $cost;
+
+echo $balance;
+
 
 
 

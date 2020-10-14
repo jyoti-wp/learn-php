@@ -530,3 +530,18 @@ echo rand($numberIWant);
 while (($diceRole = rand(1,6)) !== $numberIWant) {
     echo "You rolled a {$diceRole}, we need a {$numberIWant}" <br>;
 } 
+
+
+// a variation or a while loop is called do while loop 
+
+while (false) {
+    echo 'This will never run';
+}
+
+// what happend if we wanted a while loop that runs we use do while loop 
+
+do {
+    echo "This will run at least once ";
+} while (false );
+
+// make sure to use colen or else it wont work 

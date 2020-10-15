@@ -545,3 +545,32 @@ do {
 } while (false );
 
 // make sure to use colen or else it wont work 
+
+
+
+// lets learn FOREACH loop 
+
+$namey = ['Alex', 'John', 'Maria'];
+
+for ($i = 0; $i < $count($namey); $i++ ) {
+
+}
+
+// now lets see the structure for FOREACH loop 
+
+$namey = ['Alex', 'John', 'Maria'];
+
+// this time we choose which array we want to loop through 
+
+foreach ($namey as $name) {
+    echo $name, '<br>';
+}
+
+// theres more that we can do here 
+
+// we have normal array and assosiative array 
+
+
+
+
+// Lets learn about looping: Breaking and countinue 

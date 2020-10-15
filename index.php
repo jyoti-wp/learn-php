@@ -574,3 +574,18 @@ foreach ($namey as $name) {
 
 
 // Lets learn about looping: Breaking and countinue 
+
+
+// example 
+
+$names = ['Alex', 'Dale', 'Maria'];
+
+foreach ($names as $name) {
+    echo $names, '<br>';
+
+    // now if we add a break 
+
+    break;
+
+    // its gonna display just the name at the zero index 
+}

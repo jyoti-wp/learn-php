@@ -670,3 +670,28 @@
 //     echo $user['$username'], '<br>'; 
 
 // }
+
+
+// $users = [
+//     // //     ['username' => 'alex', 'email => 'alex@icloud.com', 'likes' => ['cats', 'food']], 
+//     // //     ['username' => 'billy', 'emial => billy@icloud.com', 'likes' => ['Dogs', 'Books']]
+//     // // ];
+
+
+//     $toFind = 'code';
+//     $found = null;
+
+//     foreach ($users as $user) {
+//         foreach ($user['like'] as like) {
+//             if ($like === $toFind) {
+//                 $found = $user;
+//                 break 2;
+//             }
+//         }
+//     }
+
+
+//     var_dump($found);
+
+
+//     if you want both the loop to breakout you need to mention 2 in front on break

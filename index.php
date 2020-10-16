@@ -1,4 +1,4 @@
-<?php
+<!-- <!-- <?php
 
 
 // there are two types od data types
@@ -17,575 +17,603 @@
 // 4. array
 
 // array are collection of different variables 
-// which can be written 
-// ['joey', 'sammy', 7]
-// [7, 8, 9, 10] which will always give you multiple values
+// // which can be written 
+// // ['joey', 'sammy', 7]
+// // [7, 8, 9, 10] which will always give you multiple values
 
-// 5. object 
+// // 5. object 
 
-// 6. resource
-// when you wanna open a file in php
+// // 6. resource
+// // when you wanna open a file in php
 
-// 7. NULL
-// no value assigned
+// // 7. NULL
+// // no value assigned
 
-// 8. callback
+// // 8. callback
 
-$daysInWeek = 7;
+// $daysInWeek = 7;
 
-// php will always use the latest command you have overwridden
+// // php will always use the latest command you have overwridden
 
-$daysInWeek = 8;
+// $daysInWeek = 8;
 
-// we can overwride the value as many times as we want as the stytem will always choose the latest given value
+// // we can overwride the value as many times as we want as the stytem will always choose the latest given value
 
-// example of concatinate strings
+// // example of concatinate strings
 
-$text ='There are ' . $daysInWeek . 'days in a week';  
+// $text ='There are ' . $daysInWeek . 'days in a week';  
 
-echo $text;
-
-
-
-// lets start with strings
-// string is defined by putting textside of single quotes.
-// we can also use double quotes but make sure you dont practice both
-// pick what you want. Even if your using numbers make sure to use quotes 
-
-// example
-
-$message = 'It\'s a lovely day today';
-
-echo $message;
-
-$thoughtOfTheDay = "she said \"learning PHP is fun\"";
-// if your using single quotes you wont have to use backslash
-
-$thoughtOfTheDay = 'she said "learning PHP will be fun"';
+// echo $text;
 
 
-echo $thoughtOfTheDay;
+
+// // lets start with strings
+// // string is defined by putting textside of single quotes.
+// // we can also use double quotes but make sure you dont practice both
+// // pick what you want. Even if your using numbers make sure to use quotes 
+
+// // example
+
+// $message = 'It\'s a lovely day today';
+
+// echo $message;
+
+// $thoughtOfTheDay = "she said \"learning PHP is fun\"";
+// // if your using single quotes you wont have to use backslash
+
+// $thoughtOfTheDay = 'she said "learning PHP will be fun"';
 
 
-// integer
-
-// how do we store a simple integer
-// it can be age or any number even if its negative. including zero
-// we can perform calculations we can add thing up by concatinating strings
-
-$daysInaWeek = 7;
-
-// float
-
-// now float is simple
-
-// example
-
-$age = 10;
-
-// echo $age;
-
-$fileIsUploaded = true;
-// now use if statement to check if its value is true or false
-// lets creat an if value
-if ($fileIsUploaded) {
-    echo 'Your file is uploaded';
-}
+// echo $thoughtOfTheDay;
 
 
-// if you ever wanna check what kind of values your working on use var_dump
+// // integer
 
-examples of array
+// // how do we store a simple integer
+// // it can be age or any number even if its negative. including zero
+// // we can perform calculations we can add thing up by concatinating strings
 
-$people = [
-    'alex' => 26,
-    'billy' => 21
-];
+// $daysInaWeek = 7;
 
-echo $people[];
+// // float
 
-// you can create an array within an another array
+// // now float is simple
 
-// example
+// // example
 
-// $user = [
-//     ['username' => 'alex', 'email => 'alex@icloud.com', 'likes' => ['cats', 'food']], 
-//     ['username' => 'billy', 'emial => billy@icloud.com', 'likes' => ['Dogs', 'Books']]
+// $age = 10;
+
+// // echo $age;
+
+// $fileIsUploaded = true;
+// // now use if statement to check if its value is true or false
+// // lets creat an if value
+// if ($fileIsUploaded) {
+//     echo 'Your file is uploaded';
+// }
+
+
+// // if you ever wanna check what kind of values your working on use var_dump
+
+// examples of array
+
+// $people = [
+//     'alex' => 26,
+//     'billy' => 21
 // ];
 
-// echo '<pre>' ,var_dump($user), '</pre>';
+// echo $people[];
 
+// // you can create an array within an another array
 
-// NULL
-//  if you are trying to find a variable that doesnt exist or have no value assigned, its considered as null variables
+// // example
 
-$name = 'alex'
+// // $user = [
+// //     ['username' => 'alex', 'email => 'alex@icloud.com', 'likes' => ['cats', 'food']], 
+// //     ['username' => 'billy', 'emial => billy@icloud.com', 'likes' => ['Dogs', 'Books']]
+// // ];
 
-users($name);
+// // echo '<pre>' ,var_dump($user), '</pre>';
 
-var_dump($name);
 
+// // NULL
+// //  if you are trying to find a variable that doesnt exist or have no value assigned, its considered as null variables
 
-// example of concatinating strings and values
+// $name = 'alex'
 
-// examples
+// users($name);
 
+// var_dump($name);
 
-$weather = 'Sunny';
-$degrees = 30;
 
-$status = 'The current weather is' .$weather. 'and it\'s' .$degrees dergrees;
+// // example of concatinating strings and values
 
-echo $status;
+// // examples
 
-// if you want to add any symbol or vaalue at the end of the variable value for exaple instead of writing degree we can actually use a sign just make sure that variables are wrapped in a value
-// instead of assigining variable many a times you can just add the value whileyou echo out 
 
-// example
+// $weather = 'Sunny';
+// $degrees = 30;
 
-echo 'My name is' , 'Jyoti';
+// $status = 'The current weather is' .$weather. 'and it\'s' .$degrees dergrees;
 
-// or you can do it the other way
+// echo $status;
 
-// example 
+// // if you want to add any symbol or vaalue at the end of the variable value for exaple instead of writing degree we can actually use a sign just make sure that variables are wrapped in a value
+// // instead of assigining variable many a times you can just add the value whileyou echo out 
 
-$name = 'Jyoti';
+// // example
 
-echo 'My name is', $name;
+// echo 'My name is' , 'Jyoti';
 
+// // or you can do it the other way
 
-// NEXT example is for if statements
+// // example 
 
-$dayOfWeek = 2;
+// $name = 'Jyoti';
 
-if ($dayTheWeek == 1 ) {
-    echo 'Its Monday';
-} else {
-    echo 'It is not Monday';
-}
+// echo 'My name is', $name;
 
-echo $dayOfWeek;
 
+// // NEXT example is for if statements
 
-// Best practices
+// $dayOfWeek = 2;
 
-// example
+// if ($dayTheWeek == 1 ) {
+//     echo 'Its Monday';
+// } else {
+//     echo 'It is not Monday';
+// }
 
-$daysOfTheWeek = 1;
+// echo $dayOfWeek;
 
-if ($daysOfTheWeek = 2) {
-    echo 'It is Monday';
 
-} else {
-    echo 'It is not Monday';
-}
+// // Best practices
 
-// Idealy check evebry single option.
-// either you can use a new condition elseif 
+// // example
 
-// example
+// $daysOfTheWeek = 1;
 
-$daysOfTheWeek = 1;
+// if ($daysOfTheWeek = 2) {
+//     echo 'It is Monday';
 
-if ($daysOfTheWeek = 2) {
-    echo 'It is Monday';
+// } else {
+//     echo 'It is not Monday';
+// }
 
-} elseif ($daysOfTheWeek == 2) {
-    echo 'It is Tuesday';
-} else if ($daysOfTheWeek == 3) {
+// // Idealy check evebry single option.
+// // either you can use a new condition elseif 
 
-} else if ($daysOfTheWeek == 4) {
-    echo 'It is Wednesday';
-} else if ($daysOfTheWeek == 5) {
-    echo 'its is Thursday'; 
-} else {
- echo 'Not a valid option'
-}
+// // example
 
-// so on and sp forth
+// $daysOfTheWeek = 1;
 
-// and if the options are outside the condition is will reflect the 
-// last option. 
+// if ($daysOfTheWeek = 2) {
+//     echo 'It is Monday';
 
-// Another example 
+// } elseif ($daysOfTheWeek == 2) {
+//     echo 'It is Tuesday';
+// } else if ($daysOfTheWeek == 3) {
 
-$dayOfWeek = 1
+// } else if ($daysOfTheWeek == 4) {
+//     echo 'It is Wednesday';
+// } else if ($daysOfTheWeek == 5) {
+//     echo 'its is Thursday'; 
+// } else {
+//  echo 'Not a valid option'
+// }
 
-$daysOfWeek = [
-    1 => 'Monday',
-    2 => 'Thuesday',
-    3 => 'Wednesday',
-];
+// // so on and sp forth
 
-// now we can create an if statement to get the value provided
+// // and if the options are outside the condition is will reflect the 
+// // last option. 
 
-if (in_array($dayOfWeek, array_keys($daysOfWeek))) {
- echo '$daysOfWeek[$dayOfWeek]';
-} else {
-    echo 'not a valid day';
-}
-// If things dont work try understanding the logic behind the codes
+// // Another example 
 
+// $dayOfWeek = 1
 
-// example for block nesting
+// $daysOfWeek = [
+//     1 => 'Monday',
+//     2 => 'Thuesday',
+//     3 => 'Wednesday',
+// ];
 
-// almost anything in php can be nested insde anither block if u have blocks
+// // now we can create an if statement to get the value provided
 
-// lets build a block that tells us the name and also if we have a long name 
+// if (in_array($dayOfWeek, array_keys($daysOfWeek))) {
+//  echo '$daysOfWeek[$dayOfWeek]';
+// } else {
+//     echo 'not a valid day';
+// }
+// // If things dont work try understanding the logic behind the codes
 
-$name = 'Joey Tribyanni';
 
-if ($name) {
-    echo 'Your name is ' .$name;
+// // example for block nesting
 
-    if (strlen($name) > 10) {
-        echo 'oh, And you have a very long name'
-    }
-}
+// // almost anything in php can be nested insde anither block if u have blocks
 
-// you could technically nest as many if statments as you need 
+// // lets build a block that tells us the name and also if we have a long name 
 
-// There are simpler ways to nest these statemts and avoid all the confusion its call the inversion operator
+// $name = 'Joey Tribyanni';
 
+// if ($name) {
+//     echo 'Your name is ' .$name;
 
-$name = 'joey';
+//     if (strlen($name) > 10) {
+//         echo 'oh, And you have a very long name'
+//     }
+// }
 
-if ( ) {
-    return;
-} 
+// // you could technically nest as many if statments as you need 
 
-echo 'your name is' .$name .'.';
+// // There are simpler ways to nest these statemts and avoid all the confusion its call the inversion operator
 
-if (strlen($name) > 10) {
 
- echo 'Oh! And you have a long name';
+// $name = 'joey';
 
-}
+// if ( ) {
+//     return;
+// } 
 
-// you can also use true or false condition 
+// echo 'your name is' .$name .'.';
 
+// if (strlen($name) > 10) {
 
-// examples of logical operator
+//  echo 'Oh! And you have a long name';
 
-if (true && true) {
-    echo 'hello';
-}
+// // }
 
-// you can also write (true && false) but you wont get any outcome as both the statements either need to be true or fales
+// // you can also use true or false condition 
 
-// lets try something more real 
-// lets create a username and password  
 
-$username = 'Billy';
-$password = 'Ilovedogs';
+// // examples of logical operator
 
-if ($username == 'Billy' && $password = 'Ilovedogs') {
-    echo 'You are In';
-}
+// if (true && true) {
+//     echo 'hello';
+// } -->
 
-// another example 
+// // you can also write (true && false) but you wont get any outcome as both the statements either need to be true or fales
 
-$weekDays = 3;
-$workingTheWeekend = true;
+// // lets try something more real 
+// // lets create a username and password  
 
-if ($weekDays == 6 || $weekDays == 7 && $workingTheWeekend) {
-    echo 'The weekend is here';
-}
+// $username = 'Billy';
+// $password = 'Ilovedogs';
 
-// if we define out number 6 or 7 we will get 'The weekend is here'; 
+// if ($username == 'Billy' && $password = 'Ilovedogs') {
+//     echo 'You are In';
+// }
 
+// // another example 
 
+// $weekDays = 3;
+// $workingTheWeekend = true;
 
-// next example is of comparison operator 
-// Now we will be using === comparison operator
+// if ($weekDays == 6 || $weekDays == 7 && $workingTheWeekend) {
+//     echo 'The weekend is here';
+// }
 
-$upload = true;
+// // if we define out number 6 or 7 we will get 'The weekend is here'; 
 
-if ($upload === ture) {
-    echo 'Uploaded';
-}
 
-// Its a bit more safe to use === operator 
 
-// another example 
+// // next example is of comparison operator 
+// // Now we will be using === comparison operator
 
+// $upload = true;
 
-$tableAvailable = true;
+// if ($upload === ture) {
+//     echo 'Uploaded';
+// }
 
-if ($tableAvailable === true) {
-    echo 'Book a table';
-}
+// // Its a bit more safe to use === operator 
 
-if ($tableAvailable !== true) {
-    echo 'No tables available';
-}
+// // another example 
 
-// other comparison operator we can use 
-// you can use exclamation mark 
 
-// switch statement 
-// we dont use them often but they are clean and easy to use 
+// $tableAvailable = true;
 
-switch (1) {
-    case 1;
-        echo 'The value is one';
-        break;
-    default;
-        echo 'The value is unknown';
-        break;
+// if ($tableAvailable === true) {
+//     echo 'Book a table';
+// }
 
-}
+// if ($tableAvailable !== true) {
+//     echo 'No tables available';
+// }
 
+// // other comparison operator we can use 
+// // you can use exclamation mark 
 
-$weather = 'Sunny';
-$color = null;
+// // switch statement 
+// // we dont use them often but they are clean and easy to use 
 
-switch (true) {
-    case $weather == 'Sunny';
-        $color = 'blue';
-        break;
-    case $weather == 'Cloudy';
-        $color = 'gray';
-        break;
-}
+// switch (1) {
+//     case 1;
+//         echo 'The value is one';
+//         break;
+//     default;
+//         echo 'The value is unknown';
+//         break;
 
+// }
 
-// We can add, subtract, multiply, divide and concatinate add strings 
-// we'll learn of how to store things in database
-// Example 
 
-$view = 0;
+// $weather = 'Sunny';
+// $color = null;
 
-$view = 0;
+// switch (true) {
+//     case $weather == 'Sunny';
+//         $color = 'blue';
+//         break;
+//     case $weather == 'Cloudy';
+//         $color = 'gray';
+//         break;
+// }
 
-// We can assign the same value as many times we want
 
-// but we can add another value to the same variable lets see how
+// // We can add, subtract, multiply, divide and concatinate add strings 
+// // we'll learn of how to store things in database
+// // Example 
 
-$views = 0;
-$views = $views + '1';
+// $view = 0;
 
-echo $views;
+// $view = 0;
 
-// we can use another way too 
+// // We can assign the same value as many times we want
 
-$views = $views++;
+// // but we can add another value to the same variable lets see how
 
-// or 
+// $views = 0;
+// $views = $views + '1';
 
-$views++;
-// and we can do this multiple times 
-$views++
-$views++
-$views++
-$views++
+// echo $views;
+
+// // we can use another way too 
+
+// $views = $views++;
+
+// // or 
+
+// $views++;
+// // and we can do this multiple times 
+// $views++
+// $views++
+// $views++
+// $views++
 
 // everytime we write the vaule the number will increase 
 
-echo $views
-// the answer will be 5 as we added the vaule 5 times 
+// echo $views
+// // the answer will be 5 as we added the vaule 5 times 
 
-// another example
-// lets assume we have taken a course with 30 classes 
+// // another example
+// // lets assume we have taken a course with 30 classes 
 
-$lessons = 30;
-// but we have completed only 7 classes till now 
-$completedLessons = 7;
+// $lessons = 30;
+// // but we have completed only 7 classes till now 
+// $completedLessons = 7;
 
-// now the formula to calculate the percentage will be 
+// // now the formula to calculate the percentage will be 
 
-// 7 / 30 * 100
+// // 7 / 30 * 100
 
-// lets add another value 
+// // lets add another value 
 
-$percentageCompleted = ($completedLessons / $lessons) * 100;
+// $percentageCompleted = ($completedLessons / $lessons) * 100;
 
-echo "YOu've completed ($percentageCompleted)% of the course";
+// echo "YOu've completed ($percentageCompleted)% of the course";
 
-// or another way to get the percentage and avoid rest of the decimiles will be as follow 
+// // or another way to get the percentage and avoid rest of the decimiles will be as follow 
 
-$percentageCompleted = number_format($percentageCompleted, 2);
-// or if you dont want the last to decimals you can just write 
+// $percentageCompleted = number_format($percentageCompleted, 2);
+// // or if you dont want the last to decimals you can just write 
 
-$percentageCompleted = number_format($percentageCompleted);
+// $percentageCompleted = number_format($percentageCompleted);
 
 
-// lets check another example for addition 
+// // lets check another example for addition 
 
-$balance = 500;
-$cost = 25; 
+// $balance = 500;
+// $cost = 25; 
 
-$balance = $balance - $cost;
+// $balance = $balance - $cost;
 
-echo $balance;
+// echo $balance;
 
 
-// another example 
+// // another example 
 
-$rows = 10;
-// we use for loop to initialise number 
+// $rows = 10;
+// // we use for loop to initialise number 
 
-for ($row = 1; $row <= $rows: $rows++) {
-    if ($row % 2 === 0) {
-        echo 'even';
-    } else {
-        echo 'Odd';
-    }
-}
+// for ($row = 1; $row <= $rows: $rows++) {
+//     if ($row % 2 === 0) {
+//         echo 'even';
+//     } else {
+//         echo 'Odd';
+//     }
+// }
 
-// now lets cover for loop 
- for ($a = 1; $a <= 10; $a++) {
-    echo $a . <br>;
- }
 
-// these kind of loops are used when you already know the number 
+// // now lets cover for loop 
+//  for ($a = 1; $a <= 10; $a++) {
+//     echo $a . <br>;
+//  }
 
-// lets check another example 
+// // these kind of loops are used when you already know the number 
 
-$totalItems = 210;
-$itemsPerPage = 25;
+// // lets check another example 
 
-$pageCount = $totalItems / $itemsPerPage;
+// $totalItems = 210;
+// $itemsPerPage = 25;
 
-echo $pageCount;  
+// $pageCount = $totalItems / $itemsPerPage;
 
-// but what we need to doid round up the value as we are trying to find the number of pages 
-// how can we do that 
+// echo $pageCount;  
 
-// hence we use a php fuction called ceil and the oposite function will be floor
+// // but what we need to doid round up the value as we are trying to find the number of pages 
+// // how can we do that 
 
-$pageCount = ceil($totalItems / $itemsPerPage);
+// // hence we use a php fuction called ceil and the oposite function will be floor
 
-echo $pageCount;
+// $pageCount = ceil($totalItems / $itemsPerPage);
 
-// now lets generate a for loop 
-// you will find and i variale in for loop which stand for increment 
+// echo $pageCount;
 
+// // now lets generate a for loop 
+// // you will find and i variale in for loop which stand for increment 
 
-// this is how you calculate of how many pages to show 
 
+// // this is how you calculate of how many pages to show 
 
-for ($i = 1; $i <= $pageCount; i++) {
-    echo '<a href="?page ' . $i . ' ">' . $i . '</a>'
 
+// for ($i = 1; $i <= $pageCount; i++) {
+//     echo '<a href="?page ' . $i . ' ">' . $i . '</a>'
 
-        // if theres only one page to display following is the way to write 
 
+//         // if theres only one page to display following is the way to write 
 
-if ($pageCount => 1) {
-    for ($i = 1; $i <= $pageCount; i++) {
-    echo '<a href="?page ' . $i . ' ">' . $i . '</a>';
 
-}
+// if ($pageCount => 1) {
+//     for ($i = 1; $i <= $pageCount; i++) {
+//     echo '<a href="?page ' . $i . ' ">' . $i . '</a>';
 
+// }
 
-// another example 
+// // another example 
 
-$namess = ['Alex', 'Maria', 'Joe'];
+// $namess = ['Alex', 'Maria', 'Joe'];
 
-for (i = 0; $i < count($namess); $i++ ) {
-    echo $namess[$i], '<br>' ;
+// for (i = 0; $i < count($namess); $i++ ) {
+//     echo $namess[$i], '<br>' ;
 
-}
+// }
 
-//  add br for line break to avoid loops to keep running 
+// //  add br for line break to avoid loops to keep running 
 
 
-// lets learn about while loop 
+// // lets learn about while loop 
 
-while (false) {
-    echo 'It will run';
-}
+// while (false) {
+//     echo 'It will run';
+// }
 
 
-// another example 
+// // another example 
 
-$curentNumber = 1;
-$endAt = 10;
-$incrementBy = 1;
+// $curentNumber = 1;
+// $endAt = 10;
+// $incrementBy = 1;
 
-while ($curentNumber <= $endAt) {
-    $curentNumber += $incrementBy;
-    echo $curentNumber, <br> ;
-}
+// while ($curentNumber <= $endAt) {
+//     $curentNumber += $incrementBy;
+//     echo $curentNumber, <br> ;
+// }
 
-// becaue it is equal to or add by the final outcome will be 11 
+// // becaue it is equal to or add by the final outcome will be 11 
 
-// the other option is to echo out before we increment it 
-// these loops give us control over how we initialise and check, it lets us create if statment but with more control inside the block 
+// // the other option is to echo out before we increment it 
+// // these loops give us control over how we initialise and check, it lets us create if statment but with more control inside the block 
 
 
-// lets create another statment 
+// // lets create another statment 
 
-lets role a dice till we get six 
+// lets role a dice till we get six 
 
-$numberIWant = 6;
+// $numberIWant = 6;
 
-// you need to use rand 
+// // you need to use rand 
 
-echo rand($numberIWant);
+// echo rand($numberIWant);
 
-// lets create a while loop and check 
+// // lets create a while loop and check 
 
-while (($diceRole = rand(1,6)) !== $numberIWant) {
-    echo "You rolled a {$diceRole}, we need a {$numberIWant}" <br>;
-} 
+// while (($diceRole = rand(1,6)) !== $numberIWant) {
+//     echo "You rolled a {$diceRole}, we need a {$numberIWant}" <br>;
+// } 
 
 
-// a variation or a while loop is called do while loop 
+// // a variation or a while loop is called do while loop 
 
-while (false) {
-    echo 'This will never run';
-}
+// while (false) {
+//     echo 'This will never run';
+// }
 
-// what happend if we wanted a while loop that runs we use do while loop 
+// // what happend if we wanted a while loop that runs we use do while loop 
 
-do {
-    echo "This will run at least once ";
-} while (false );
+// do {
+//     echo "This will run at least once ";
+// } while (false );
 
-// make sure to use colen or else it wont work 
+// // make sure to use colen or else it wont work 
 
 
 
-// lets learn FOREACH loop 
+// // lets learn FOREACH loop 
 
-$namey = ['Alex', 'John', 'Maria'];
+// $namey = ['Alex', 'John', 'Maria'];
 
-for ($i = 0; $i < $count($namey); $i++ ) {
+// for ($i = 0; $i < $count($namey); $i++ ) {
 
-}
+// }
 
-// now lets see the structure for FOREACH loop 
+// // now lets see the structure for FOREACH loop 
 
-$namey = ['Alex', 'John', 'Maria'];
+// $namey = ['Alex', 'John', 'Maria'];
 
-// this time we choose which array we want to loop through 
+// // this time we choose which array we want to loop through 
 
-foreach ($namey as $name) {
-    echo $name, '<br>';
-}
+// foreach ($namey as $name) {
+//     echo $name, '<br>';
+// }
 
-// theres more that we can do here 
+// // theres more that we can do here 
 
-// we have normal array and assosiative array 
+// // we have normal array and assosiative array 
 
 
 
 
-// Lets learn about looping: Breaking and countinue 
+// // Lets learn about looping: Breaking and countinue 
 
 
-// example 
+// // example 
 
-$names = ['Alex', 'Dale', 'Maria'];
+// $names = ['Alex', 'Dale', 'Maria'];
 
-foreach ($names as $name) {
-    echo $names, '<br>';
+// foreach ($names as $name) {
+//     echo $names, '<br>';
 
-    // now if we add a break 
+//     // now if we add a break 
 
-    break;
+//     break;
+// }
+//     // its gonna display just the name at the zero index 
 
-    // its gonna display just the name at the zero index 
-}
+
+
+
+//     // multi dimentional array 
+
+// $topics = [
+//     [
+//         'id' => 1,
+//         'title' => 'The best way to learn PHP',
+//         'Posts' => [
+//             ['body' => 'Practice a lot'],
+//             ['body' => 'Work on a Project'],
+//         ]
+//     ]
+// ],
+
+// now duplicate it 
+
+// [
+//     'id' => 2;
+//     'title' => 'How do i use a foreach loop',
+//     'Post' => [['body' => 'just watch this part'],]
+// ];
+
+// foreach ($topics as $topic) {
+//     echo '<h1>' . $topic[$'title'] . '</h1>';
+//         foreach ($topic['$post'])
+// } -->

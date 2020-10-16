@@ -617,3 +617,56 @@
 //     echo '<h1>' . $topic[$'title'] . '</h1>';
 //         foreach ($topic['$post'])
 // } -->
+// for each loop breaking and contuning 
+// example
+
+
+// $users = [
+//     ['username' => 'Alex'],
+//     ['username' => 'Billy'],
+//     ['username' => 'Chilly'],
+//     ['username' => 'Dilly'],
+//     ['username' => 'Elley'],
+// ];
+
+// $toFind = 'Dilly';
+// $result = 'null';
+
+// foreach ($users as $user) {
+//     if ($user[$username] === $toFind) {
+//         $result = $user;
+//         break;
+//     }
+// }
+
+
+// var_dump($result);
+
+
+// once we have found the value there is no need for looping 
+
+                // now lets look at the continue example 
+
+
+
+// $users = [
+//     ['username' => 'Alex'],
+//     ['username' => 'Billy'],
+//     ['username' => 'Chilly'],
+//     ['username' => 'Dilly'],
+//     ['username' => 'Elley'],
+// ];
+
+
+// $toSkip = 'Dilly';
+
+
+
+// foreach ($users as $user) {
+//     if ($user['$username'] === $toSkip) {
+//         break;
+//     }
+
+//     echo $user['$username'], '<br>'; 
+
+// }

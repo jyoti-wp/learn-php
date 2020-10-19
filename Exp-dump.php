@@ -90,3 +90,11 @@ var_dump($users) -->
 // $fullName = fullName('Joey', 'Green', '_');
 
 // echo fullName;
+
+// lets check other variations of funtion 
+
+$fullName = funtion ($firstName, $lastName, $seperator = ' ') {
+    return "{$firstName}{$seperator}{$lastName}";
+};
+
+echo $fullName('Joey', 'Green');

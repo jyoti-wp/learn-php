@@ -1,4 +1,4 @@
-<!-- <!-- <?php
+<!-- <?php
 
 
 // there are two types od data types

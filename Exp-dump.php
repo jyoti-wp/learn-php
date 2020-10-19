@@ -154,6 +154,35 @@ var_dump($users) -->
 
 
 
+// lets learn about func_get_arg
+// func_get_arg is a predefined php funtion and when used inside of a funtion will give us an array of all of the arguments that we have passed in 
 
+
+// funtion add() {
+//     var_dump(func_get_arg());
+// }
+
+// echo add();
+
+// what we will get is an empty array 
+
+// now if we had to define not in an array but a list of number we would write 
+
+// echo add(5, 10, 15);
+
+// now despite the fact that we did not add any argument in the fucntion the func_get_arg will get the value 
+
+
+// another example 
+
+function add() {
+    $total = 0;
+
+    foreach (func_get_arg() as $number) {
+        $total += $numbers
+    }
+    
+    return $total
+}
 
 

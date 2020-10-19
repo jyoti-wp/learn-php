@@ -175,14 +175,69 @@ var_dump($users) -->
 
 // another example 
 
-function add() {
-    $total = 0;
+// function add() {
+//     $total = 0;
 
-    foreach (func_get_arg() as $number) {
-        $total += $numbers
-    }
+//     foreach (func_get_arg() as $number) {
+
+// //     }
+//         $total += $numbers
+// // }
+//         return $total
+// you can also add an if statement 
+
+
+// function add() {
+//         $total = 0;
     
-    return $total
-}
+//         foreach (func_get_arg() as $number) {
+//             if (!is_numeric($number)) {
+//                 continue;
+//             }
+//     }
+//         $total += $numbers
+// }
+//         return $total
+
+// echo add(5, 10, 15);
 
 
+
+// next thing we going to talk about is scope 
+// it reffers to the visibility of variables 
+//  now lets say we had come kind of configuration store in array 
+
+// $config = [
+//     '$seperator' => ' '
+// ];
+
+// function fullName($firstName, $lastName) {
+//     return '{$firstName}{$seperator}{$lastName}';
+// }
+
+// echo fullName('Joey', 'Green');
+
+
+// well now lets use $config seperator 
+
+// $config = [
+//     '$seperator' => ' '
+// ];
+
+// function fullName($firstName, $lastName) {
+//     return '{$firstName}{$config['seperator']}{$lastName}';
+// }
+
+// echo fullName('Joey', 'Green');
+
+// now when we config a sperator 
+
+// $config = [
+//     '$seperator' => ' ';
+// ];
+
+// function fullName($firstName, $lastName) use ($config) {
+//     return '{$firstName}{$config['seperator']}{$lastName}';
+// };
+
+// echo fullName('Joey', 'Green');

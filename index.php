@@ -1,5 +1,7 @@
 <!-- <?php
-
+include '/hello.php';
+include '/Exp-dump.php';
+include '/user.php';
 
 // there are two types od data types
 // 1. strings

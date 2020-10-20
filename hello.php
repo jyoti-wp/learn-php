@@ -8,5 +8,5 @@
 
 // if you use require it stops the execuetion and inclue does not 
 
-you can use both but just make sure to keep it simple 
-these are basically used for large paths or if statements.
+// you can use both but just make sure to keep it simple 
+// these are basically used for large paths or if statements.

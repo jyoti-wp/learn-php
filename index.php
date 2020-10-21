@@ -697,3 +697,47 @@ include '/user.php';
 
 
 //     if you want both the loop to breakout you need to mention 2 in front on break
+
+
+<?php 
+
+// $page = $_GET['Page'];
+// $searchTerm = $_GET['search'];
+// $pages = 10;
+
+// // now lets replace the items from page and serachterm 
+
+// echo '<h3>Searching for: ' . $searchTerm . '</h3>';
+
+
+// The ternary operator 
+
+// It will show us how to set any page to default one in case if the server is not working or from help page break 
+// we use ternary operator 
+// example
+
+// $page = 1;
+
+// if (isset($_GET['$page'])) {
+//     $page = $_GET['page'];
+// }
+
+// echo $page;
+
+
+// theres also an easier way 
+// Now we are gonna use the ternary operator
+// ternary operator is an inline if statement 
+// which means we can use isset bore the if statement and we add question mark to inform it by sign
+// we add a colen at the end and assgin the value as is page one or two or any other page 
+
+// $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+// echo $page;
+
+
+// you can also create another ternary or block but it might get complicated 
+
+// there is another way which is easier but you can do that only if you using php seven 
+
+// phpinfo(); to check which version of php your using 

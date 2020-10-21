@@ -1,7 +1,7 @@
-<!-- <?php
-include '/hello.php';
-include '/Exp-dump.php';
-include '/user.php';
+<?php
+include '/hello.php'
+include '/Exp-dump.php'
+include '/user.php'
 
 // there are two types od data types
 // 1. strings
@@ -699,8 +699,6 @@ include '/user.php';
 //     if you want both the loop to breakout you need to mention 2 in front on break
 
 
-<?php 
-
 // $page = $_GET['Page'];
 // $searchTerm = $_GET['search'];
 // $pages = 10;
@@ -725,6 +723,9 @@ include '/user.php';
 // echo $page;
 
 
+
+
+
 // theres also an easier way 
 // Now we are gonna use the ternary operator
 // ternary operator is an inline if statement 
@@ -736,8 +737,27 @@ include '/user.php';
 // echo $page;
 
 
+
+
+
+
+
 // you can also create another ternary or block but it might get complicated 
 
 // there is another way which is easier but you can do that only if you using php seven 
 
+
+
+
+
 // phpinfo(); to check which version of php your using 
+
+
+
+
+
+// another simple example for ternary operator 
+
+// $page = $_GET['page'] ?? 1;
+
+// echo $page;

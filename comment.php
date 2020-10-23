@@ -160,3 +160,90 @@
 
 
 // $escaped = addcslashes($not_escaped, "\0..\37!@\177..\377");
+
+
+
+// chop — Alias of rtrim()
+
+// Description ¶
+// This function is an alias of: rtrim().
+
+// Notes ¶
+// Note:
+
+// chop() is different than the Perl chop() function, which removes the last character in the string.
+
+/*
+chunk_split — Split a string into smaller chunks
+
+Description ¶
+chunk_split ( string $body [, int $chunklen = 76 [, string $end = "\r\n" ]] ) : string
+Can be used to split a string into smaller chunks which is useful for e.g. converting base64_encode() output to match RFC 2045 semantics. It inserts end every chunklen characters.
+
+Parameters ¶
+body
+The string to be chunked.
+
+chunklen
+The chunk length.
+
+end
+The line ending sequence.
+
+<?php
+// format $data using RFC 2045 semantics
+$new_string = chunk_split(base64_encode($data));
+?>
+
+convert_cyr_string — Convert from one Cyrillic character set to another
+
+Description ¶
+convert_cyr_string ( string $str , string $from , string $to ) : string
+Converts from one Cyrillic character set to another.
+
+Parameters ¶
+str
+The string to be converted.
+
+from
+The source Cyrillic character set, as a single character.
+
+to
+The target Cyrillic character set, as a single character.
+
+Supported characters are:
+
+k - koi8-r
+w - windows-1251
+i - iso8859-5
+a - x-cp866
+d - x-cp866
+m - x-mac-cyrillic
+Return Values ¶
+Returns the converted string.
+
+
+
+
+convert_uudecode — Decode a uuencoded string
+
+Description ¶
+convert_uudecode ( string $data ) : string
+convert_uudecode() decodes a uuencoded string.
+
+Note: convert_uudecode() neither accepts the begin nor the end line, which are part of uuencoded files.
+
+Parameters ¶
+data
+The uuencoded data.
+
+Return Values ¶
+Returns the decoded data as a string or FALSE on failure.
+
+Examples ¶
+Example #1 convert_uudecode() example
+
+<?php
+echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`");
+?>
+*/

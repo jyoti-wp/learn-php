@@ -376,4 +376,41 @@ Example #2 explode() return examples
 /* 
    A string that doesn't contain the delimiter will simply
    return a one-length array of the original string.
+
+
+
+
+
+
+wordwrap — Wraps a string to a given number of characters
+
+Description ¶
+wordwrap ( string $str [, int $width = 75 [, string $break = "\n" [, bool $cut = FALSE ]]] ) : string
+Wraps a string to a given number of characters using a string break character.
+
+Parameters ¶
+str
+The input string.
+
+width
+The number of characters at which the string will be wrapped.
+
+break
+The line is broken using the optional break parameter.
+
+cut
+If the cut is set to TRUE, the string is always wrapped at or before the specified width. So if you have a word that is larger than the given width, it is broken apart. (See second example). When FALSE the function does not split the word even if the width is smaller than the word width.
+
+Return Values ¶
+Returns the given string wrapped at the specified length.
+
+Examples ¶
+Example #1 wordwrap() example
+
+<?php
+$text = "The quick brown fox jumped over the lazy dog.";
+$newtext = wordwrap($text, 20, "<br />\n");
+
+echo $newtext;
+?>
 */

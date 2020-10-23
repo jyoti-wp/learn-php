@@ -246,4 +246,134 @@ Example #1 convert_uudecode() example
 <?php
 echo convert_uudecode("+22!L;W9E(%!(4\"$`\n`");
 ?>
+
+
+convert_uuencode — Uuencode a string
+
+Description ¶
+convert_uuencode ( string $data ) : string
+convert_uuencode() encodes a string using the uuencode algorithm.
+
+Uuencode translates all strings (including binary data) into printable characters, making them safe for network transmissions. Uuencoded data is about 35% larger than the original.
+
+Note: convert_uuencode() neither produces the begin nor the end line, which are part of uuencoded files.
+
+Parameters ¶
+data
+The data to be encoded.
+
+Return Values ¶
+Returns the uuencoded data or FALSE on failure.
+
+Examples ¶
+Example #1 convert_uuencode() example
+
+<?php
+$some_string = "test\ntext text\r\n";
+
+echo convert_uuencode($some_string);
+?>
+
+
+count_chars — Return information about characters used in a string
+
+Description ¶
+count_chars ( string $string [, int $mode = 0 ] ) : mixed
+Counts the number of occurrences of every byte-value (0..255) in string and returns it in various ways.
+
+Parameters ¶
+string
+The examined string.
+
+mode
+See return values.
+
+Return Values ¶
+Depending on mode count_chars() returns one of the following:
+
+0 - an array with the byte-value as key and the frequency of every byte as value.
+1 - same as 0 but only byte-values with a frequency greater than zero are listed.
+2 - same as 0 but only byte-values with a frequency equal to zero are listed.
+3 - a string containing all unique characters is returned.
+4 - a string containing all not used characters is returned.
+Examples ¶
+Example #1 count_chars() example
+
+<?php
+$data = "Two Ts and one F.";
+
+foreach (count_chars($data, 1) as $i => $val) {
+   echo "There were $val instance(s) of \"" , chr($i) , "\" in the string.\n";
+}
+?>
+
+
+crypt — One-way string hashing
+
+Warning
+This function is not (yet) binary safe!
+
+Description ¶
+crypt ( string $str [, string $salt ] ) : string
+
+
+
+
+
+
+
+
+
+explode — Split a string by a string
+
+Description ¶
+explode ( string $delimiter , string $string [, int $limit = PHP_INT_MAX ] ) : array
+Returns an array of strings, each of which is a substring of string formed by splitting it on boundaries formed by the string delimiter.
+
+Parameters ¶
+delimiter
+The boundary string.
+
+string
+The input string.
+
+limit
+If limit is set and positive, the returned array will contain a maximum of limit elements with the last element containing the rest of string.
+
+If the limit parameter is negative, all components except the last -limit are returned.
+
+If the limit parameter is zero, then this is treated as 1.
+
+Note:
+
+Although implode() can, for historical reasons, accept its parameters in either order, explode() cannot. You must ensure that the delimiter argument comes before the string argument.
+
+Return Values ¶
+Returns an array of strings created by splitting the string parameter on boundaries formed by the delimiter.
+
+If delimiter is an empty string (""), explode() will return FALSE. If delimiter contains a value that is not contained in string and a negative limit is used, then an empty array will be returned, otherwise an array containing string will be returned.
+
+Examples ¶
+Example #1 explode() examples
+
+<?php
+// Example 1
+$pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+$pieces = explode(" ", $pizza);
+echo $pieces[0]; // piece1
+echo $pieces[1]; // piece2
+
+// Example 2
+$data = "foo:*:1023:1000::/home/foo:/bin/sh";
+list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);
+echo $user; // foo
+echo $pass; // *
+
+?>
+Example #2 explode() return examples
+
+<?php
+/* 
+   A string that doesn't contain the delimiter will simply
+   return a one-length array of the original string.
 */

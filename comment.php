@@ -516,6 +516,78 @@ $newtext = wordwrap($text, 8, "\n", true);
 
 echo "$newtext\n";
 ?>
+
+
+addcslashes — Quote string with slashes in a C style
+
+Description ¶
+addcslashes ( string $str , string $charlist ) : string
+Returns a string with backslashes before characters that are listed in charlist parameter.
+
+Parameters ¶
+str
+The string to be escaped.
+
+charlist
+A list of characters to be escaped. If charlist contains characters \n, \r etc., they are converted in C-like style, while other non-alphanumeric characters with ASCII codes lower than 32 and higher than 126 converted to octal representation.
+
+When you define a sequence of characters in the charlist argument make sure that you know what characters come between the characters that you set as the start and end of the range.
+
+<?php
+echo addcslashes('foo[ ]', 'A..z');
+// output:  \f\o\o\[ \]
+// All upper and lower-case letters will be escaped
+// ... but so will the [\]^_`
+?>
+Also, if the first character in a range has a higher ASCII value than the second character in the range, no range will be constructed. Only the start, end and period characters will be escaped. Use the ord() function to find the ASCII value for a character.
+<?php
+echo addcslashes("zoo['.']", 'z..A');
+// output:  \zoo['\.']
+?>
+Be careful if you choose to escape characters 0, a, b, f, n, r, t and v. They will be converted to \0, \a, \b, \f, \n, \r, \t and \v, all of which are predefined escape sequences in C. Many of these sequences are also defined in other C-derived languages, including PHP, meaning that you may not get the desired result if you use the output of addcslashes() to generate code in those languages with these characters defined in charlist.
+
+Return Values ¶
+Returns the escaped string.
+
+Examples ¶
+charlist like "\0..\37", which would escape all characters with ASCII code between 0 and 31.
+
+Example #1 addcslashes() example
+
+<?php
+$escaped = addcslashes($not_escaped, "\0..\37!@\177..\377");
+?>
+
+convert_cyr_string — Convert from one Cyrillic character set to another
+
+Description ¶
+convert_cyr_string ( string $str , string $from , string $to ) : string
+Converts from one Cyrillic character set to another.
+
+
+
+
+If two parameters are given, number will be formatted with decimals decimals with a dot (".") in front, and a comma (",") between every group of thousands.
+
+If all four parameters are given, number will be formatted with decimals decimals, dec_point instead of a dot (".") before the decimals and thousands_sep instead of a comma (",") between every group of thousands.
+
+Parameters ¶
+number
+The number being formatted.
+
+decimals
+Sets the number of decimal points.
+
+dec_point
+Sets the separator for the decimal point.
+
+thousands_sep
+Sets the thousands separator.
+
+Return Values ¶
+A formatted version of number.
+
+
 ?>
 ?>
 */
